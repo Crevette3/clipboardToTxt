@@ -1,7 +1,7 @@
 # clipboardToTxt
--Will need to install the pyperclip modual using >>> pip install pyperclip
+-You will need to install the pyperclip modual using >>> pip install pyperclip
 
--Constently checks if anything new has been copied to the clipboard, just run the code once and it will save everything you copy to a .txt file
+-This code constently checks if anything new has been copied to the clipboard, just run the code once and it will save everything you copy to a .txt file called clipboard.txt
 
 -Written in python
 
