@@ -10,7 +10,7 @@ import pyperclip
 # something from the clipboard that was put there when this tool was not
 # running.  That way you can safely kill it when copying a password and
 # restart it afterwards and it will not steal your sensitive paste.
-last_paste = pyperclip.paste()
+last_paste = pyperclip.paste().strip()
 
 while True:
     time.sleep(0.1)
