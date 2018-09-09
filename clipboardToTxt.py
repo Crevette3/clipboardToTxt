@@ -1,6 +1,6 @@
 #! python3
 #https://www.youtube.com/channel/UCsZs-p37pse_4UXG-alR47w   (My channel where I explain this code and demonstrate it working)
-# clipboardToTxt.py - Pastes what you copy into a text filefrom 
+# clipboardToTxt.py - Pastes what you copy into a text file
 
 import time
 import sys
