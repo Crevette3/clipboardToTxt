@@ -6,6 +6,8 @@ import time
 import sys
 import pyperclip
 
+# Based on https://github.com/bolapara/clipboardToTxt pull request.
+
 # By preloading last_paste with the existing clipboard we avoid saving
 # something from the clipboard that was put there when this tool was not
 # running.  That way you can safely kill it when copying a password and
