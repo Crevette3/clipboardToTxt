@@ -6,7 +6,11 @@ import time
 import sys
 import pyperclip
 
-last_paste = ''
+# By preloading last_paste with the existing clipboard we avoid saving
+# something from the clipboard that was put there when this tool was not
+# running.  That way you can safely kill it when copying a password and
+# restart it afterwards and it will not steal your sensitive paste.
+last_paste = pyperclip.paste()
 
 while True:
     time.sleep(0.1)
