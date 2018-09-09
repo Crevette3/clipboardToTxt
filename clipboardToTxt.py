@@ -6,6 +6,8 @@ import time
 import sys
 import pyperclip
 
+MARKER = '$'
+
 # By preloading last_paste with the existing clipboard we avoid saving
 # something from the clipboard that was put there when this tool was not
 # running.  That way you can safely kill it when copying a password and
@@ -18,7 +20,7 @@ while True:
     if paste != last_paste:
         try:
             with open('clipboard.txt', 'a') as f:
-                f.write('{}\n'.format(paste))
+                f.write('{}\n{}\n'.format(paste, MARKER))
                 last_paste = paste
         except Exception as e:
             sys.stderr.write("Error: {}".format(e))
