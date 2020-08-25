@@ -19,7 +19,7 @@ while True:
     paste = pyperclip.paste().strip()
     if paste != last_paste:
         try:
-            with open('clipboard.txt', 'a') as f:
+            with open('clipboard.txt', 'a',encoding="utf-8") as f:
                 f.write('{}\n$\n'.format(paste))
                 last_paste = paste
         except Exception as e:
